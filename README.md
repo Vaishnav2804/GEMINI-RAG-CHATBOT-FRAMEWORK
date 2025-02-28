@@ -1,13 +1,6 @@
 # Simple Gemini RAG Chatbot Framework
 
-## Setup
-
-1. Add your GEMINI_API key in `configs/.env`.
-   
-2. In `configs/config.py`:
-   - Add `URLs` to scrape (ensure permission from sites).
-   - Customize `SYSTEM_PROMPT` for your use case.
-   - Customize your `GEMINI_MODEL`.
+Just add your gemini api key in `.env` file, `URLS` to scrape, and modify `System_Prompt` in `/configs/config.py`. That's it, you're good to deploy a RAG-enabled-chatbot with a reasoning Gemini Model(if a reasoning model is used). 
 
 ## Deploy on Hugging Face
 Follow Hugging Face's documentation to deploy the framework under Chatbot.
