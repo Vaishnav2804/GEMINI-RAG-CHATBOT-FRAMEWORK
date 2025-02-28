@@ -5,7 +5,9 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 load_dotenv()
 
-URLS = ["https://en.wikipedia.org/wiki/Artificial_intelligence"]
+URLS = ["https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)"] # Keep adding URLS that you wish to scrape information for RAG.
+
 CHUNK_SIZE = 2400
 CHUNK_OVERLAP = 200
 TOTAL_RESULTS = 2389
