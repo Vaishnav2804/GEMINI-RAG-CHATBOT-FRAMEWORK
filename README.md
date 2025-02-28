@@ -7,11 +7,11 @@ Just add your gemini api key in `.env` file, `URLS` to scrape, and modify `Syste
    ```bash
    python3 -m venv .venv
    ```
-For linux/macOS:
+- For linux/macOS:
    ```bash
    source .venv/bin/activate
    ```
-For Windows:
+- For Windows:
    ```bash
     .venv\Scripts\Activate.ps1
    ```
@@ -24,7 +24,7 @@ For Windows:
    python app.py
    ```
 
-# Done, your GEMINI Powered RAG-CHATBOT is READY!
+### Done, your GEMINI Powered RAG-CHATBOT is READY!
 
 # Developers:
 1. To switch to a different LLM, modify `llm_setup/llm_setup.py`.
