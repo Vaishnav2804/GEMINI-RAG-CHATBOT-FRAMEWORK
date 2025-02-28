@@ -1,13 +1,22 @@
----
-title: Chatbot Framework Using Gradio and ChromaDB powered by GEMINI
-emoji: 💬
-colorFrom: yellow
-colorTo: purple
-sdk: gradio
-sdk_version: 5.19.0
-app_file: app.py
-pinned: false
-license: mit
----
+# Simple Gemini RAG Chatbot Framework
 
-An example chatbot using [Gradio](https://gradio.app), [`huggingface_hub`](https://huggingface.co/docs/huggingface_hub/v0.22.2/en/index), and the [Hugging Face Inference API](https://huggingface.co/docs/api-inference/index).
+## Setup
+
+1. Add your GEMINI_API key in `configs/.env`.
+   
+2. In `configs/config.py`:
+   - Add `URLs` to scrape (ensure permission from sites).
+   - Customize `SYSTEM_PROMPT` for your use case.
+   - Customize your `GEMINI_MODEL`.
+
+## Deploy on Hugging Face
+Follow Hugging Face's documentation to deploy the framework under Chatbot.
+
+# Done, your GEMINI Powered RAG-CHATBOT is READY!
+
+# Developers:
+
+1. To switch to a different LLM, modify `llm_setup/llm_setup.py`.
+2. This framework follows a layered architecture:
+   - **Service Layer**: Contains all business logic.
+   - **Store Layer**: Handles adding/retrieving embeddings from Chroma DB (basic functionality).
